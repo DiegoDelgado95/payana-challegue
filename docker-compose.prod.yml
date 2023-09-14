@@ -1,0 +1,36 @@
+version: '3'
+services:
+  payana-api:
+    depends_on:
+      - db
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: payana-docker
+    container_name: payana-api
+    restart: always
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      DB_HOST: ${DB_HOST}
+    networks:
+      - payana_network
+
+  db:
+    image: mysql:8.0.34-debian
+    container_name: payana-db
+    restart: always
+    ports:
+    - '3306:3306'
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: 'payanadb'
+      MYSQL_USER: 'payana_user'
+      MYSQL_PASSWORD: 'secret-payana'
+      MYSQL_ROOT_PASSWORD: 'secret-root'
+    networks:
+      - payana_network
+
+networks:
+  payana_network:

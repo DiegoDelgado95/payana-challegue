@@ -1,0 +1,5 @@
+dist/
+mysql/
+node_modules/
+.gitignore
+.git/

@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "09b4eddb-a225-4223-95b3-51edcb9e499b",
+		"name": "payana-challengue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29666141"
+	},
+	"item": [
+		{
+			"name": "supplier",
+			"item": [
+				{
+					"name": "all-suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/supplier",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-supplier",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Kiosco Diegos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/supplier/174dc1d8-470d-42d1-b51a-948a1a96fd8e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"supplier",
+								"174dc1d8-470d-42d1-b51a-948a1a96fd8e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-supplier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Kiosco Diego\",\r\n    \"address\": \"Calle 8 1535\",\r\n    \"detailsContact\": \"Cel: 29712312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/supplier/f0d19c09-471c-457b-91da-0041c8f7ba41",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"supplier",
+								"f0d19c09-471c-457b-91da-0041c8f7ba41"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-supplier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/supplier/174dc1d8-470d-42d1-b51a-948a1a96fd8e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"supplier",
+								"174dc1d8-470d-42d1-b51a-948a1a96fd8e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-supplier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Kiosco Diego\",\r\n    \"address\": \"Calle 8 1535\",\r\n    \"detailsContact\": \"Cel: 29712312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/supplier",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"supplier"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "invoces",
+			"item": [
+				{
+					"name": "all-invoces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/invoces",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"invoces"
+							],
+							"query": [
+								{
+									"key": "nroInvoce",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "supplierId",
+									"value": "21ea4d51-557b-4676-8bda-eb0b6d415df6",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-supplier",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"createdAt\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/invoces/91df7645-c9ee-42f3-bcf6-55a48f5bf759",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"invoces",
+								"91df7645-c9ee-42f3-bcf6-55a48f5bf759"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-supplier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Kiosco Diego\",\r\n    \"address\": \"Calle 8 1535\",\r\n    \"detailsContact\": \"Cel: 29712312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/invoces/f0d19c09-471c-457b-91da-0041c8f7ba41",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"invoces",
+								"f0d19c09-471c-457b-91da-0041c8f7ba41"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-invoce",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/invoces/ca643df6-f80c-42c3-8077-693610afe223",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"invoces",
+								"ca643df6-f80c-42c3-8077-693610afe223"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-invoce",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nroInvoce\":6,\r\n    \"dueDate\": \"2023-09-15\",\r\n    \"amount\": 2000,\r\n    \"supplierId\": \"174dc1d8-470d-42d1-b51a-948a1a96fd8e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/invoces",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"invoces"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transactions",
+			"item": [
+				{
+					"name": "all-transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "invoiceId",
+									"value": "f0d19c09-471c-457b-91da-0041c8f7ba41",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/transactions/614de50e-d483-42b1-8eca-ca96ae1d97a0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions",
+								"614de50e-d483-42b1-8eca-ca96ae1d97a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 1000,\r\n    \"invoiceId\": \"ca643df6-f80c-42c3-8077-693610afe223\",\r\n    \"type\": \"Partial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/transactions/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
