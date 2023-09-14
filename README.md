@@ -47,6 +47,12 @@ MySQL client de preferencia
 2. docker-compose -f docker-compose.prod.yml --env-file .env.prod up --build
 ```
 
+## Documentacion de los endpoints
+
+```
+http://localhost:3000/swagger#/
+```
+
 ## Diagrama de base de datos
 
 ![db](img/payanadb.png)
